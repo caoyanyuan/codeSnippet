@@ -1,0 +1,16 @@
+/*scss版本*/
+
+@function px2vw($width) {
+    @return round($width / 1920 * 10000) / 10000 * 100vw;
+}
+@function px2vh($width) {
+    @return round($width / 1080 * 10000) / 10000 * 100vw;
+}
+
+/*less版本*/
+.px2vh (@px) {
+    @result: @px/1080 *100vh ;
+}
+.px2vw (@px) {
+    @result: @px/1920 *100vw ;
+}
